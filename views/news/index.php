@@ -13,7 +13,7 @@
             <form action="<?php echo constant('URL'); ?>news/registerStudent" method="POST">
                 <p>
                     <label for="enrollment">enrollment</label><br>
-                    <input type="text" name="matricula" id="" required>
+                    <input type="text" name="enrollment" id="" required>
                 </p>
                 <p>
                     <label for="name">Name</label><br>

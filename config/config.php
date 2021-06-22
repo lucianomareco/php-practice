@@ -2,8 +2,8 @@
 
 define('URL', 'http://localhost/MVC/');
 define('HOST', 'localhost');
-define('DB', '');
+define('DB', 'mvc');
 define('USER', 'root');
-define('PASSWORD', "123!\".QWE");
+define('PASSWORD', "");
 define('CHARSET', 'utf8mb4');
 ?>

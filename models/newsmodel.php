@@ -6,9 +6,16 @@ class NewsModel extends Model{
         parent::__construct();
     }
     
-    public function insert(){
+    public function insert($data){
         //insert data in database
-        echo 'insert data';
+
+        try{
+        $query = $this->db->connect()->prepare('INSERT INTO STUDENTS (ENROLLMENT, NAME, LASTNAME) VALUES(:enrollment, :name, :lastName)');
+        $query->execute(['enrollment'=> $data['enrollment'], 'name'=>$data['name'], 'lastName'=>$data['lastName']]);
+        }
+        catch(PDOException $e){
+            echo 'Enrollmnet already existented'
+
     }
 }
 ?>

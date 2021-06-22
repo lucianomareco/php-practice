@@ -24,9 +24,10 @@ class Database{
             ];
             
             $pdo = new PDO($connection, $this->user, $this->password, $options);
-    
+            echo 'se puedo conectar';
             return $pdo;
         }catch(PDOException $e){
+            echo 'no se puedo conectar';
             print_r('Error connection: ' . $e->getMessage());
         }
     }
