@@ -9,7 +9,24 @@
 <body>
     <?php require 'views/header.php';?>
         <div id="main">
-            <h1 class="center">News section.</h1>    
+            <h1 class="center">News section.</h1>
+            <form action="<?php echo constant('URL'); ?>news/registerStudent" method="POST">
+                <p>
+                    <label for="enrollment">enrollment</label><br>
+                    <input type="text" name="matricula" id="" required>
+                </p>
+                <p>
+                    <label for="name">Name</label><br>
+                    <input type="text" name="name" id="" required>
+                </p>
+                <p>
+                    <label for="lastName">lastName</label><br>
+                    <input type="text" name="lastName" id="" required>
+                </p>
+                <p>
+                <input type="submit" value="Register new student">
+                </p>
+            </form>    
         </div>
     <?php require 'views/footer.php';?>
 </body>
